@@ -1,0 +1,47 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    target-branch: 'develop'
+    open-pull-requests-limit: 0
+    schedule:
+      interval: 'daily'
+    reviewers:
+      - 'leonardorpr'
+    commit-message:
+      prefix: 'deps |'
+      include: 'scope'
+    labels:
+      - 'depend-bot'
+      - 'update'
+    ignore:
+      - dependency-name: '@commitlint/cli'
+      - dependency-name: '@commitlint/config-conventional'
+      - dependency-name: 'babel-loader'
+      - dependency-name: 'commitizen'
+      - dependency-name: 'cz-conventional-changelog'
+      - dependency-name: 'eslint'
+      - dependency-name: 'eslint-config-prettier'
+      - dependency-name: 'eslint-import-resolver-typescript'
+      - dependency-name: 'eslint-plugin-import'
+      - dependency-name: 'eslint-plugin-import-helpers'
+      - dependency-name: 'eslint-plugin-jsx-a11y'
+      - dependency-name: 'eslint-plugin-prettier'
+      - dependency-name: 'husky'
+      - dependency-name: 'prettier'
+      - dependency-name: 'lint-staged'
+
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    target-branch: 'develop'
+    open-pull-requests-limit: 0
+    schedule:
+      interval: 'daily'
+    reviewers:
+      - 'leonardorpr'
+    commit-message:
+      prefix: 'actions |'
+    labels:
+      - 'depend-bot'
+      - 'update'
+      - 'CI/CD'
