@@ -1,6 +1,6 @@
 name: Vercel Preview Deployment
 env:
-  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_ORG_ID: 6nrp8s2QEP4WJEpJCVNrPz2Z
   VERCEL_PROJECT_ID: prj_VkACgxCCtiO3xjzLPbjowi9iBPkS
 on:
   push:
