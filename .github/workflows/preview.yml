@@ -1,5 +1,6 @@
 name: Vercel Preview Deployment
 env:
+  VERCEL_ORG_ID: prj_VkACgxCCtiO3xjzLPbjowi9iBPkS
   VERCEL_PROJECT_ID: prj_VkACgxCCtiO3xjzLPbjowi9iBPkS
 on:
   push:
